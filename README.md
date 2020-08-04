@@ -1,2 +1,2 @@
 # fullstack-auth
-Node.js / Vue.js / Express.js / Postgres / Keycloak
+Node.js / Vue.js / Express.js / Postgres / Keycloak / Nginx

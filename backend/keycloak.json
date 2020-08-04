@@ -1,0 +1,9 @@
+{
+    "realm": "keycloak-demo",
+    "auth-server-url": "http://localhost/auth/",
+    "ssl-required": "external",
+    "resource": "vue-test-app",
+    "public-client": true,
+    "confidential-port": 0,
+    "enable-cors": true
+}
