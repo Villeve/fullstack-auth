@@ -48,7 +48,7 @@ export default {
       this.showUserInfo = true;
       this.showSecretMessage = false;
 
-      this.decodedToken = await axios.get('http://localhost:8000/api/me', {
+      this.decodedToken = await axios.get('http://localhost/api/me', {
         headers: {
           'Authorization': `Bearer ${localStorage.vueToken}`
         }
@@ -58,7 +58,7 @@ export default {
       this.showUserInfo = false;
       this.showSecretMessage = true;
 
-      this.secretMessage = await axios.get('http://localhost:8000/api/message', {
+      this.secretMessage = await axios.get('http://localhost/api/message', {
         headers: {
           'Authorization': `Bearer ${localStorage.vueToken}`
         }
@@ -70,18 +70,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-p {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
