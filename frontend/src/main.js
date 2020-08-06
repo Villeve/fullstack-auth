@@ -4,10 +4,8 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-//////////////////////////////
-
 let initOptions = {
-  url: 'http://0.0.0.0:8080/auth', realm: 'keycloak-demo', clientId: 'vue-test-app', onLoad: 'login-required'
+  url: 'http://localhost/auth', realm: 'keycloak-demo', clientId: 'vue-test-app', onLoad: 'login-required'
 }
 
 let keycloak = Keycloak(initOptions);
